@@ -35,14 +35,14 @@ row-gap: 15px;
    grid-template-columns:15vw 20vw 20vw 30vw 15vw ;
    gap: 15px;
    grid-area:
-   "as he he he as"
-   "as na na na as"
-   "as ma ma ma as"
-   "as se se ma ma"
-   "as se se ma ma"
-   "as se se se as"
-   "as se se se as"
-   "as se se se as"
+   "as he he he as2"
+   "as na na na as2"
+   "as ma ma ma as2"
+   "as se se ma2 ma2"
+   "as se se ma2 ma2"
+   "as se se se as3"
+   "as se se se as3"
+   "as se se se as3"
    "fo fo fo fo fo" ;}
 body,ul{
     margin: 0;

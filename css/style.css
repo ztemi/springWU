@@ -1,27 +1,75 @@
-#wrapper1 { }
+#wrapper1 { 
+    display: grid;
+    width: 100%;
+    height: 140vh;
+    grid-template-rows: 15vh 3fr 3fr ;
+    grid-template-columns: 100vw;
+    grid-template-areas: 
+
+    "he"
+    "ma"
+    "ma" ;
+}
+
+#wrapper2 {display: grid;
+width: 100%;
+height: 150vh;
+grid-template-rows:100px 15vh 1fr 1fr 1fr 1fr 50px ;
+grid-template-columns:100vw ; 
+grid-template-areas: 
+"na"
+"se"
+"se"
+"se"
+"se"
+"se"
+"fo";
+row-gap: 15px;
+}
+
+#wrapper3 {
+   display: grid;
+   width: 100vw;
+   height: 320vh;
+   grid-template-rows: 50px 50px 10vh 70vh 1fr 1fr 1fr 1fr 1fr ;
+   grid-template-columns:15vw 20vw 20vw 30vw 15vw ;
+   gap: 15px;
+   grid-area:
+   "as he he he as"
+   "as na na na as"
+   "as ma ma ma as"
+   "as se se ma ma"
+   "as se se ma ma"
+   "as se se se as"
+   "as se se se as"
+   "as se se se as"
+   "fo fo fo fo fo" ;}
 body,ul{
     margin: 0;
 }
 body{background-color: rgb(231, 237, 235);
 margin: 50px;}
-@media screen and {min-width: 700px;
+@media screen and (min-width: 400px) {
+    .wrapper {
+        display:none;
+    }
 }
 
 
 .menu{
     height: 100vh;
-    width: 80vw;
-    background: hotpink;
+    width: 60vw;
+    background: rgb(255, 255, 16);
     position: fixed;
     top: 0;
-    left: -90vw;
-    transition: left 0.3s;
+    left: -95vw;
+    transition: left 0.4s;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: 10;
 }
 
 .menu-button{
-    cursor: pointer;
+    cursor: pointer;    
     display: inline;
 }
 
@@ -47,3 +95,39 @@ margin: 50px;}
 .fade-layer.visible{
     display: block;
 }
+
+header {
+display: grid;
+grid-area: he;
+    background-color:#ea3001;
+}
+
+nav{
+    display: grid;
+grid-area: na;
+    background-color:#bb0682;}
+
+
+main{
+    display: grid;
+    grid-area: ma;
+    background-color: rgb(8, 185, 185);
+}
+
+section{
+    display: flex;
+grid-area: se;
+    background-color:#794ee7;
+flex-direction: column;
+padding: 20px;
+}
+
+footer{
+    display: grid;
+grid-area: fo;
+   background-color: #01ea5e;;}
+  
+   aside {
+    display: grid;
+    grid-area: as;
+background-color: gold;   }

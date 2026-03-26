@@ -31,20 +31,22 @@ row-gap: 15px;
    display: grid;
    width: 100vw;
    height: 320vh;
-   grid-template-rows: 50px 50px 10vh 70vh 1fr 1fr 1fr 1fr 1fr ;
-   grid-template-columns:15vw 20vw 20vw 30vw 15vw ;
+   grid-template-rows: 50px 50px 10vh 70vh 1fr 1fr 1fr 1fr 200px ;
+   grid-template-columns:10vw 20vw 30vw 30vw 10vw ;
    gap: 15px;
-   grid-area:
+   grid-template-areas:
    "as he he he as2"
    "as na na na as2"
    "as ma ma ma as2"
    "as se se ma2 ma2"
    "as se se ma2 ma2"
-   "as se se se as3"
-   "as se se se as3"
-   "as se se se as3"
-   "fo fo fo fo fo" ;}
-body,ul{
+   "as se se se2 as3"
+   "as se se se2 as3"
+   "as se se se2 as3"
+   "fo fo fo fo fo" ;
+background-image: url(../img/paul-lichtblau-qVotvbsuM_c-unsplash.jpg);}
+
+   body,ul{
     margin: 0;
 }
 body{background-color: rgb(231, 237, 235);
@@ -105,7 +107,14 @@ grid-area: he;
 nav{
     display: grid;
 grid-area: na;
-    background-color:#bb0682;}
+    background-color:#bb0682;
+    align-content: center;
+
+}
+nav a { display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+justify-content: space-around;}
 
 
 main{
@@ -115,13 +124,31 @@ main{
 }
 
 section{
-    display: flex;
 grid-area: se;
     background-color:#794ee7;
-flex-direction: column;
-padding: 20px;
+align-content: flex-start;
+padding: 50px;
+ display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#se2 { 
+    display:  grid;
+    grid-area: se2;
+    background-color: lightslategray;
 }
 
+section img{
+   
+    
+    height: 30vh;
+    width: 20vw;
+    
+    
+    margin: 10px;
+    border-radius: 30px;
+   
+}
 footer{
     display: grid;
 grid-area: fo;
@@ -130,4 +157,27 @@ grid-area: fo;
    aside {
     display: grid;
     grid-area: as;
-background-color: gold;   }
+   }
+
+aside#as3 {
+    display: grid;
+    grid-area: as3;
+    background-color: greenyellow;
+}
+
+
+#as2 {
+    display: grid;
+    grid-area: as2;
+    background-color: +rgb(18, 39, 229);
+}
+
+
+#ma2 {
+    display: grid;
+    grid-area: ma2;
+    background-color: rgb(102, 7, 19);
+     background-image: url(../img/paul-lichtblau-qVotvbsuM_c-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}

@@ -32,7 +32,7 @@ row-gap: 15px;
    width: 100vw;
    height: 320vh;
    grid-template-rows: 50px 50px 10vh 70vh 1fr 1fr 1fr 1fr 200px ;
-   grid-template-columns:10vw 20vw 30vw 30vw 10vw ;
+   grid-template-columns:10vw 20vw 1fr 30vw 10vw ;
    gap: 15px;
    grid-template-areas:
    "as he he he as2"
@@ -122,12 +122,18 @@ main{
     grid-area: ma;
     background-color: rgb(8, 185, 185);
 }
+main h2 {
+   display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
 
 section{
 grid-area: se;
     background-color:#794ee7;
 align-content: flex-start;
-padding: 50px;
+padding: 30px;
  display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -136,8 +142,9 @@ padding: 50px;
     display:  grid;
     grid-area: se2;
     background-color: lightslategray;
-}
 
+}
+p{color: whitesmoke;}
 section img{
    
     
@@ -162,7 +169,8 @@ grid-area: fo;
 aside#as3 {
     display: grid;
     grid-area: as3;
-    background-color: greenyellow;
+   
+    background-image: url(../img/paul-lichtblau-qVotvbsuM_c-unsplash.jpg);
 }
 
 
